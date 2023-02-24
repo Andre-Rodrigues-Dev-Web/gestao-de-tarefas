@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Agendamento de postagens</title>
+    <link rel="stylesheet" type="text/css" href="theme.css">
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="sidebar">
+        <a href="#" class="active">Tarefas</a>
+        <a href="#">Calendário</a>
+        <a href="#">Redes sociais</a>
+        <a href="#">Configurações</a>
+      </div>
+      <div class="main">
+        <form>
+          <label for="rede-social">Selecione a rede social:</label>
+          <select id="rede-social" name="rede-social">
+            <option value="Facebook">Facebook</option>
+            <option value="Instagram">Instagram</option>
+            <option value="Twitter">Twitter</option>
+          </select>
+          <label for="data">Data e hora da postagem:</label>
+          <input type="date" id="data" name="data">
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="10"></textarea>
+          <input type="submit" value="Agendar">
+        </form>
+        <div class="container_tarefas">
+          <h2>
+            Tarefas agendadas
+          </h2>
+          <div class="tarefas"></div>
+        </div>
+      </div>
+    </div>
+
+  <script src="theme.js"></script>  
+  </body>
+</html>
